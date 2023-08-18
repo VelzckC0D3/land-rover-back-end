@@ -1,4 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_api_v1_reservation, only: %i[show update destroy]
 
   # GET /api/v1/reservations
