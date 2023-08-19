@@ -7,7 +7,7 @@ class Api::V1::CarsController < ApplicationController
     if @api_v1_cars.present?
       render json: { success: true, details: @api_v1_cars }
     else
-      render json: { success: false, details: 'No Users Found' }
+      render json: { success: false, details: 'No Cars Found' }
     end
   rescue StandardError => e
     render json: { success: false, details: e.message }

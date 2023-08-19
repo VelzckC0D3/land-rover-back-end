@@ -20,6 +20,8 @@ gem 'rspec-rails'
 
 # Devise
 gem 'devise'
+gem 'devise-jwt'
+gem 'fast_jsonapi'
 
 # CanCanCan
 gem 'cancancan'
