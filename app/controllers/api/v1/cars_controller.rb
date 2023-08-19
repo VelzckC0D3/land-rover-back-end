@@ -1,5 +1,4 @@
 class Api::V1::CarsController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_api_v1_car, only: %i[show update destroy]
 
   # GET /api/v1/cars
