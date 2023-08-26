@@ -44,7 +44,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_213248) do
 
   create_table "cars", force: :cascade do |t|
     t.string "name"
-
     t.integer "price"
     t.string "description"
     t.string "front_image"
