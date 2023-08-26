@@ -5,17 +5,17 @@ class Api::V1::ReservationsController < ApplicationController
   def index
     @api_v1_reservations = Reservation.all
     if @api_v1_reservations.present?
-      render json: { success: true, details: @api_v1_reservations }
+      render json: @api_v1_reservations, status: :ok
     else
-      render json: { success: false, details: 'No reservations found' }
+      render json: { message: 'No reservations found' }, status: :not_found
     end
   rescue StandardError => e
-    render json: { success: false, details: e.message }
+    render json: { error: e.message }, status: :internal_server_error
   end
 
   # GET /api/v1/reservations/1
   def show
-    render json: @api_v1_reservation
+    render json: @api_v1_reservation, status: :ok
   end
 
   # POST /api/v1/reservations
@@ -23,27 +23,27 @@ class Api::V1::ReservationsController < ApplicationController
     @api_v1_reservation = Reservation.new(api_v1_reservation_params)
 
     if @api_v1_reservation.save
-      render json: { success: true, details: 'Reservation created successfully' }
+      render json: { message: 'Reservation created successfully' }, status: :created
     else
-      render json: { success: false, details: @api_v1_reservation.errors }
+      render json: { errors: @api_v1_reservation.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /api/v1/reservations/1
   def update
     if @api_v1_reservation.update(api_v1_reservation_params)
-      render json: { success: true, details: 'Reservation updated successfully' }
+      render json: { message: 'Reservation updated successfully' }, status: :ok
     else
-      render json: { success: false, details: @api_v1_reservation.errors }
+      render json: { errors: @api_v1_reservation.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
   # DELETE /api/v1/reservations/1
   def destroy
     if @api_v1_reservation.destroy
-      render json: { success: true, details: 'Reservation deleted successfully' }
+      render json: { message: 'Reservation deleted successfully' }, status: :ok
     else
-      render json: { success: false, details: @api_v1_reservation.errors }
+      render json: { errors: @api_v1_reservation.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
@@ -57,5 +57,7 @@ class Api::V1::ReservationsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def api_v1_reservation_params
     params.require(:reservation).permit(:city, :date, :user_id, :car_id)
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Reservations not found' }, status: :not_found
   end
 end
