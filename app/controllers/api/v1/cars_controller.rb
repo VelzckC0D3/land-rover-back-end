@@ -1,5 +1,5 @@
 class Api::V1::CarsController < ApplicationController
-  before_action :set_api_v1_car, only: [:show, :update, :destroy]
+  before_action :set_api_v1_car, only: %i[show update destroy]
 
   # GET /api/v1/cars
   def index
@@ -58,8 +58,6 @@ class Api::V1::CarsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def api_v1_car_params
-
     params.require(:car).permit(:name, :price, :description, :front_image, :back_image, :interior_image)
-
   end
 end
