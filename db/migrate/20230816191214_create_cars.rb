@@ -7,6 +7,7 @@ class CreateCars < ActiveRecord::Migration[7.0]
       t.string :front_image
       t.string :back_image
       t.string :interior_image
+      t.string :color
 
       t.timestamps
     end
