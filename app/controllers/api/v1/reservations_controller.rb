@@ -3,14 +3,16 @@ class Api::V1::ReservationsController < ApplicationController
 
   # GET /api/v1/reservations
   def index
-    @api_v1_reservations = Reservation.all
-    if @api_v1_reservations.present?
-      render json: @api_v1_reservations, status: :ok
-    else
-      render json: { message: 'No reservations found' }, status: :not_found
+    begin
+      @api_v1_reservations = Reservation.all
+      if @api_v1_reservations.present?
+        render json: @api_v1_reservations, status: :ok
+      else
+        render json: { message: 'No reservations found' }, status: :not_found
+      end
+    rescue => exception
+      render json: { error: e.message }, status: :internal_server_error
     end
-  rescue StandardError => e
-    render json: { error: e.message }, status: :internal_server_error
   end
 
   # GET /api/v1/reservations/1

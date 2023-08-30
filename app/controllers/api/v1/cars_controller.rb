@@ -3,14 +3,16 @@ class Api::V1::CarsController < ApplicationController
 
   # GET /api/v1/cars
   def index
-    @api_v1_cars = Car.all
-    if @api_v1_cars.present?
-      render json: @api_v1_cars, status: :ok
-    else
-      render json: { message: 'No Cars Found' }, status: :not_found
+    begin
+      @api_v1_cars = Car.all
+      if @api_v1_cars.present?
+        render json: @api_v1_cars, status: :ok
+      else
+        render json: { message: 'No Cars Found' }, status: :not_found
+      end
+    rescue StandardError => e
+      render json: { error: e.message }, status: :internal_server_error
     end
-  rescue StandardError => e
-    render json: { error: e.message }, status: :internal_server_error
   end
 
   # GET /api/v1/cars/1
