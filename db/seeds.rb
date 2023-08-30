@@ -3,14 +3,46 @@ User.create!( name: "Admin", email: "admin@ruby.com", password: "asd123", role: 
 User.create!( name: "User A", email: "user-a@ruby.com", password: "asd123" )
 User.create!( name: "User B", email: "user-b@ruby.com", password: "asd123" )
 
-cars = Car.create([
-{name: "Benz", price: 325000},
-{name: "BMW", model: "M8 GTR", year: "2024", price: 215000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Audi", model: "RS6", year: "2024", price: 18946, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Lamborghini", model: "Urus", year: "2021", price: 120000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Cheverolet", model: "Camaru", year: "2020", price: 100000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Benz", model: "Maybach", year: "2023", price: 115000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Ford", model: "Focus RS MK3", year: "2024", price: 10946, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Nissan", model: "GTR R36", year: "2024", price: 200000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"},
-{name: "Bugati", model: "chiron", year: "2019", price: 1100000, main_image: "https://images.unsplash.com/photo-1646654184457-cd64cadcd3a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80", side_image: "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"}])
+Car.create!( name: "Defender",
+    price: 6000,
+    description: "The Defender stands as a captivating model with its contemporary electronic system and additional features.",
+    front_image: "https://i.postimg.cc/tJ1KH4fs/front.webp",
+    semi_front_image: "https://i.postimg.cc/05mJ0Rcf/semi-front.webp",
+    side_image: "https://i.postimg.cc/Fz22FQ5D/side.webp",
+    semi_back_image: "https://i.postimg.cc/wMhyqL7P/semi-back.webp",
+    back_image: "https://i.postimg.cc/8czYSgJc/back.webp",
+    color: "#ffb400"
+)
 
+Car.create!( name: "Discovery",
+    price: 7000,
+    description: "The Discovery captivates as a splendid model featuring a modern electronic system and an array of extras.",
+    front_image: "https://i.postimg.cc/7P54fbxm/front.webp",
+    semi_front_image: "https://i.postimg.cc/d3b405qP/semi-front.webp",
+    side_image: "https://i.postimg.cc/tR8jPyJy/side.webp",
+    semi_back_image: "https://i.postimg.cc/VvrK1xPW/semi-back.webp",
+    back_image: "https://i.postimg.cc/76QKFxdL/back.webp",
+    color: "#d43b3b"
+)
+
+Car.create!( name: "Range Rover Evoque",
+    price: 8000,
+    description: "The Range Rover entices as an exquisite model equipped with a contemporary electronic system and a host of enhancements.",
+    front_image: "https://i.postimg.cc/NMynf91X/front.webp",
+    semi_front_image: "https://i.postimg.cc/vTfSfJ2H/semi-front.webp",
+    side_image: "https://i.postimg.cc/cHVbKxmb/side.webp",
+    semi_back_image: "https://i.postimg.cc/NGHn3XGq/semi-back.webp",
+    back_image: "https://i.postimg.cc/T39FkXdK/back.webp",
+    color: "#3484d5"
+)
+
+Car.create!( name: "Range Rover Velar",
+    price: 9000,
+    description: "The Range Rover Velar shines as a remarkable model with its modern electronic system and a myriad of supplementary features.",
+    front_image: "https://i.postimg.cc/NjsBGDLr/front.webp",
+    semi_front_image: "https://i.postimg.cc/SKj4CK6S/semi-front.webp",
+    side_image: "https://i.postimg.cc/1zTQHZBp/side.webp",
+    semi_back_image: "https://i.postimg.cc/qv10NKCD/semi-back.webp",
+    back_image: "https://i.postimg.cc/d3Gw3S8G/back.webp",
+    color: "#7857d5"
+)

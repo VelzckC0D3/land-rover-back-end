@@ -9,7 +9,7 @@ class Api::V1::ReservationsController < ApplicationController
     else
       render json: { message: 'No reservations found' }, status: :not_found
     end
-  rescue StandardError => e
+  rescue StandardError
     render json: { error: e.message }, status: :internal_server_error
   end
 
