@@ -47,8 +47,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_213248) do
     t.integer "price"
     t.string "description"
     t.string "front_image"
+    t.string "semi_front_image"
+    t.string "side_image"
+    t.string "semi_back_image"
     t.string "back_image"
-    t.string "interior_image"
     t.string "color"
 
     t.datetime "created_at", null: false
