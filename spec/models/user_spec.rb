@@ -21,7 +21,7 @@ RSpec.describe User, type: :model do
     expect(user).to be_valid
   end
 
-  it 'has many reservations' do
+  it 'User has many reservations' do
     association = described_class.reflect_on_association(:reservations)
     expect(association.macro).to eq :has_many
   end
