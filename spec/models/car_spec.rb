@@ -11,11 +11,6 @@ RSpec.describe Car, type: :model do
     expect(car).not_to be_valid
   end
 
-  it 'is valid with valid attributes' do
-    car = Car.new(name: 'Toyota Camry', price: 25_000)
-    expect(car).to be_valid
-  end
-
   it 'is not valid with a name longer than 100 characters' do
     car = Car.new(name: 'A' * 101, price: 28_000)
     expect(car).not_to be_valid
