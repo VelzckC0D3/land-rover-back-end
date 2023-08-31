@@ -95,12 +95,17 @@ To run the project tests, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author / Owner <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Nabeel Ahmed**
 - GitHub: [@Metaverse-Nabeel](https://github.com/Metaverse-Nabeel)
 - LinkedIn: [@Nabeel129](https://www.linkedin.com/in/nabeel129/)
 - Wellfound(AngelList): [@Nabeel129](https://wellfound.com/u/nabeel-ahmed-62) 
+
+👤 **Emmanuel Mhango**
+- GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
+- LinkedIn: [@emmanuellmhango](https://www.linkedin.com/in/emmanuellmhango)
+- Wellfound(AngelList): [@emmanuel-mhango](https://wellfound.com/u/emmanuel-mhango) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
