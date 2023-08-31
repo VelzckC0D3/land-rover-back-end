@@ -52,7 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_213248) do
     t.string "semi_back_image"
     t.string "back_image"
     t.string "color"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
