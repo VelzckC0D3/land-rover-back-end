@@ -107,6 +107,12 @@ To run the project tests, execute the following command:
 - LinkedIn: [@emmanuellmhango](https://www.linkedin.com/in/emmanuellmhango)
 - Wellfound(AngelList): [@emmanuel-mhango](https://wellfound.com/u/emmanuel-mhango) 
 
+👤 **Tebe Tisloh**
+
+- GitHub: [@Booze33](https://github.com/Booze33)
+- Twitter: [@twitterhandle](https://twitter.com/Tebe95645832)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tebe-tisloh-847956225)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
