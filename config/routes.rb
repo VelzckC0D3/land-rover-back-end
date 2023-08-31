@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: 'api/v1/users#index'
+
   get '/current_user', to: 'current_user#index'
 
   devise_for :users, path: '', path_names: {
