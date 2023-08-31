@@ -9,7 +9,7 @@ RSpec.describe Reservation, type: :model do
     expect(reservation).not_to be_valid
   end
 
-  it 'is not valid without a city' do
+  it 'Reservation is not valid without a city name' do
     reservation = Reservation.new(date: '2002-12-12')
     expect(reservation).not_to be_valid
   end
