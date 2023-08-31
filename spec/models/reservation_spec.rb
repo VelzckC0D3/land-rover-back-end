@@ -4,7 +4,7 @@ RSpec.describe Reservation, type: :model do
   let(:user) { User.create(name: 'King', email: 'king@gmail.com', password: 'password') }
   let(:car) { Car.create(name: 'Honda Civic', price: 20_000) }
 
-  it 'is not valid without a date' do
+  it 'Reservation is not valid without a date' do
     reservation = Reservation.new(city: 'Berlin')
     expect(reservation).not_to be_valid
   end
