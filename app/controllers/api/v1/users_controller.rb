@@ -32,7 +32,7 @@ class Api::V1::UsersController < ApplicationController
   # PATCH/PUT /api/v1/users/1
   def update
     if @api_v1_user.update(api_v1_user_params)
-      render json: @api_v1_user
+      render json: @api_v1_user, status: :ok
     else
       render json: @api_v1_user.errors, status: :unprocessable_entity
     end
