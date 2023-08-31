@@ -6,7 +6,7 @@ RSpec.describe Car, type: :model do
     expect(car).not_to be_valid
   end
 
-  it 'is not valid without a price' do
+  it 'Car is not valid without a price' do
     car = Car.new(name: 'rover')
     expect(car).not_to be_valid
   end
