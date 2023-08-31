@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
     expect(user).not_to be_valid
   end
 
-  it 'is valid with valid attributes' do
+  it 'User is valid with valid attributes' do
     user = User.new(name: 'King', email: 'king@gmail.com', password: 'password')
     expect(user).to be_valid
   end
