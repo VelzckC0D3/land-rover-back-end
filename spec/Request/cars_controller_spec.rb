@@ -16,5 +16,19 @@ RSpec.describe Api::V1::CarsController, type: :controller do
     end
   end
 
-  
+  describe 'GET #show' do
+    it 'returns a not_found response when car is not available' do
+      get :show, params: { id: 999 }
+      expect(response).to have_http_status(:not_found)
+      expect(JSON.parse(response.body)['error']).to eq('Car not found')
+    end
+  end
+
+  describe 'POST #create' do
+    it 'returns unprocessable_entity response on validation error' do
+      post :create, params: { car: { name: '', price: 20000 } }
+      expect(response).to have_http_status(:unprocessable_entity)
+      expect(JSON.parse(response.body)['errors']).to include("Name can't be blank")
+    end
+  end
 end
