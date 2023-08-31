@@ -14,7 +14,7 @@ RSpec.describe Reservation, type: :model do
     expect(reservation).not_to be_valid
   end
 
-  it 'is valid with valid attributes' do
+  it 'Reservation of car is valid with valid attributes' do
     reservation = Reservation.new(user:, car:, date: Date.today, city: 'New York')
     expect(reservation).to be_valid
   end
