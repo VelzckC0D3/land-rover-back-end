@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Car, type: :model do
-  it 'is not valid without a name' do
+  it 'Car is not valid without a name' do
     car = Car.new(price: '300')
     expect(car).not_to be_valid
   end
