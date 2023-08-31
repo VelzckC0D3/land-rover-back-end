@@ -21,7 +21,6 @@ class Api::V1::CarsController < ApplicationController
   # POST /api/v1/cars
   def create
     @api_v1_car = Car.new(api_v1_car_params)
-
     if @api_v1_car.save
       render json: { message: 'Data saved successfully' }, status: :created
     else
