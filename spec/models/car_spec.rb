@@ -18,14 +18,7 @@ RSpec.describe Car, type: :model do
   end
 
   it 'is valid with valid attributes' do
-<<<<<<< HEAD
     car = Car.new(name: 'Toyota Camry', price: 25_000, color: 'Cyan')
-=======
-    car = Car.new(name: 'Toyota Camry', price: 25000, color: 'Cyan')
-
-  it 'Car is valid only with valid attributes' do
-    car = Car.new(name: 'Toyota Camry', price: 25_000)
->>>>>>> ec0fe05db2c413ea2ed4ee318ee6f7cf7bb85cda
     expect(car).to be_valid
   end
 
