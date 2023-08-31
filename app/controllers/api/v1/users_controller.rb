@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
   def index
     @api_v1_user = User.all
     if @api_v1_user.present?
-      render json: { success: true, users: @api_v1_user }
+      render json: { success: true, users: @api_v1_user }, status: :ok
     else
       render json: { success: false, message: 'No Users Found' }
     end
