@@ -11,7 +11,7 @@ RSpec.describe User, type: :model do
     expect(user).not_to be_valid
   end
 
-  it 'is not valid without a password' do
+  it 'User is not valid without an email' do
     user = User.new(name: 'test', email: 'test@gmail.com')
     expect(user).not_to be_valid
   end
