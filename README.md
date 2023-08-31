@@ -113,6 +113,7 @@ To run the project tests, execute the following command:
 
 - Making desktop view
 - Impoving UI / UX of the application
+- Improving API accessbility to third parties 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
