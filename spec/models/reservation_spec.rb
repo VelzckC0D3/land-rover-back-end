@@ -24,7 +24,7 @@ RSpec.describe Reservation, type: :model do
     expect(association.macro).to eq :belongs_to
   end
 
-  it 'belongs to a car' do
+  it 'Reservation belongs to a car' do
     association = described_class.reflect_on_association(:car)
     expect(association.macro).to eq :belongs_to
   end
