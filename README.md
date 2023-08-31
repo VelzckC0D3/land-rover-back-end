@@ -98,9 +98,9 @@ To run the project tests, execute the following command:
 ## 👥 Author / Owner <a name="authors"></a>
 
 👤 **Alejandro Velasquez**
-- GitHub: [@Metaverse-Nabeel]()
-- LinkedIn: [@Nabeel129]()
-- Twitter: [@twitterhandle]()
+- GitHub: [@alejandro]()
+- LinkedIn: [@alejandro]()
+- Twitter: [@alejandro]()
 
 
 👤 **Nabeel Ahmed**
@@ -110,15 +110,15 @@ To run the project tests, execute the following command:
 
 
 👤 **Emmanuel Mhango**
-- GitHub: [@Metaverse-Nabeel]()
-- LinkedIn: [@Nabeel129]()
-- Wellfound(AngelList): [@Nabeel129]()
+- GitHub: [@emma]()
+- LinkedIn: [@emma]()
+- Wellfound(AngelList): [@emma]()
 
 
 👤 **Daniel Falcon**
-- GitHub: [@Metaverse-Nabeel]()
-- LinkedIn: [@Nabeel129]()
-- Wellfound(AngelList): [@Nabeel129]()
+- GitHub: [@daniel]()
+- LinkedIn: [@daniel]()
+- Wellfound(AngelList): [@daniel]()
   
 
   👤 **Tebe Tisloh**
