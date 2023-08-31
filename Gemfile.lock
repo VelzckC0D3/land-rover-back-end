@@ -102,7 +102,6 @@ GEM
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.1)
@@ -270,7 +269,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.1.3p185
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.18
