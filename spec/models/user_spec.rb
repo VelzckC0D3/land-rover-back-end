@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
     expect(user).not_to be_valid
   end
 
-  it 'is not valid without a emial' do
+  it 'User is not valid without a password' do
     user = User.new(name: 'test', password: 'password')
     expect(user).not_to be_valid
   end
