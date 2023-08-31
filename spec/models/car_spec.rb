@@ -22,7 +22,7 @@ RSpec.describe Car, type: :model do
     expect(car.errors[:name]).to include('is too long (maximum is 100 characters)')
   end
 
-  it 'has many reservations' do
+  it 'Car has many reservations' do
     association = described_class.reflect_on_association(:reservations)
     expect(association.macro).to eq :has_many
   end
