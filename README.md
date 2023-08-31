@@ -97,10 +97,36 @@ To run the project tests, execute the following command:
 
 ## 👥 Author / Owner <a name="authors"></a>
 
+👤 **Alejandro Velasquez**
+- GitHub: [@Metaverse-Nabeel]()
+- LinkedIn: [@Nabeel129]()
+- Twitter: [@twitterhandle]()
+
+
 👤 **Nabeel Ahmed**
 - GitHub: [@Metaverse-Nabeel](https://github.com/Metaverse-Nabeel)
 - LinkedIn: [@Nabeel129](https://www.linkedin.com/in/nabeel129/)
-- Wellfound(AngelList): [@Nabeel129](https://wellfound.com/u/nabeel-ahmed-62) 
+- Wellfound(AngelList): [@Nabeel129](https://wellfound.com/u/nabeel-ahmed-62)
+
+
+👤 **Emmanuel Mhango**
+- GitHub: [@Metaverse-Nabeel]()
+- LinkedIn: [@Nabeel129]()
+- Wellfound(AngelList): [@Nabeel129]()
+
+
+👤 **Daniel Falcon**
+- GitHub: [@Metaverse-Nabeel]()
+- LinkedIn: [@Nabeel129]()
+- Wellfound(AngelList): [@Nabeel129]()
+  
+
+  👤 **Tebe Tisloh**
+
+- GitHub: [@Booze33](https://github.com/Booze33)
+- Twitter: [@twitterhandle](https://twitter.com/Tebe95645832)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tebe-tisloh-847956225)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
