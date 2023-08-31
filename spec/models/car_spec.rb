@@ -16,7 +16,7 @@ RSpec.describe Car, type: :model do
     expect(car).to be_valid
   end
 
-  it 'is not valid with a name longer than 100 characters' do
+  it 'Car entry is not valid with a name longer than 100 characters' do
     car = Car.new(name: 'A' * 101, price: 28_000)
     expect(car).not_to be_valid
     expect(car.errors[:name]).to include('is too long (maximum is 100 characters)')
