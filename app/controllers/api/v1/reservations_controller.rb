@@ -21,7 +21,6 @@ class Api::V1::ReservationsController < ApplicationController
   # POST /api/v1/reservations
   def create
     @api_v1_reservation = Reservation.new(api_v1_reservation_params)
-
     if @api_v1_reservation.save
       render json: { message: 'Reservation created successfully' }, status: :created
     else
