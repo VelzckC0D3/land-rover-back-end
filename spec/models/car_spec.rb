@@ -11,7 +11,7 @@ RSpec.describe Car, type: :model do
     expect(car).not_to be_valid
   end
 
-  it 'is valid with valid attributes' do
+  it 'Car is valid only with valid attributes' do
     car = Car.new(name: 'Toyota Camry', price: 25_000)
     expect(car).to be_valid
   end
