@@ -19,7 +19,7 @@ RSpec.describe Reservation, type: :model do
     expect(reservation).to be_valid
   end
 
-  it 'belongs to a user' do
+  it 'Reservation belongs to a user' do
     association = described_class.reflect_on_association(:user)
     expect(association.macro).to eq :belongs_to
   end
