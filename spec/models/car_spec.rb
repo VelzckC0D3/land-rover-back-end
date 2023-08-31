@@ -11,7 +11,6 @@ RSpec.describe Car, type: :model do
     expect(car).not_to be_valid
   end
 
-
   it 'is not valid without a color' do
     car = Car.new(name: 'rover', price: 25_000)
     expect(car).not_to be_valid
