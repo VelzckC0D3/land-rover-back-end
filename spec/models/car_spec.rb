@@ -12,12 +12,12 @@ RSpec.describe Car, type: :model do
   end
 
   it 'is not valid without a color' do
-    car = Car.new(name: 'rover', price: 25000)
+    car = Car.new(name: 'rover', price: 25_000)
     expect(car).not_to be_valid
   end
 
   it 'is valid with valid attributes' do
-    car = Car.new(name: 'Toyota Camry', price: 25000, color: 'Cyan')
+    car = Car.new(name: 'Toyota Camry', price: 25_000, color: 'Cyan')
     expect(car).to be_valid
   end
 

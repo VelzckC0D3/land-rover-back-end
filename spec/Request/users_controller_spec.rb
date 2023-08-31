@@ -37,14 +37,18 @@ RSpec.describe Api::V1::UsersController, type: :controller do
 
   describe 'POST #create' do
     it 'creates a new user' do
-      post :create, params: { user: { name: 'New User', email: 'new@example.com', password: 'newpassword', password_confirmation: 'newpassword' } }
+      post :create,
+           params: { user: { name: 'New User', email: 'new@example.com', password: 'newpassword',
+                             password_confirmation: 'newpassword' } }
       expect(response).to have_http_status(:ok)
       expect(JSON.parse(response.body)['success']).to be_truthy
       expect(JSON.parse(response.body)['user']['name']).to eq('New User')
     end
 
     it 'returns unprocessable_entity response on validation error' do
-      post :create, params: { user: { name: '', email: 'invalidemail', password: 'password', password_confirmation: 'password' } }
+      post :create,
+           params: { user: { name: '', email: 'invalidemail', password: 'password',
+                             password_confirmation: 'password' } }
       expect(response).to have_http_status(:unprocessable_entity)
     end
   end

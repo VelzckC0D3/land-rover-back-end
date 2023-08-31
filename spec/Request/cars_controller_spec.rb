@@ -26,7 +26,7 @@ RSpec.describe Api::V1::CarsController, type: :controller do
 
   describe 'POST #create' do
     it 'returns unprocessable_entity response on validation error' do
-      post :create, params: { car: { name: '', price: 20000 } }
+      post :create, params: { car: { name: '', price: 20_000 } }
       expect(response).to have_http_status(:unprocessable_entity)
       expect(JSON.parse(response.body)['errors']).to include("Name can't be blank")
     end
