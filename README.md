@@ -114,8 +114,15 @@ To run the project tests, execute the following command:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tebe-tisloh-847956225)
 
 👤 **Daniel Falcon**
+
 - LinkedIn: [Danfall369](https://www.linkedin.com/in/danfall/)
 - GitHub [Danfall369](https://github.com/Danfall369)
+
+
+👤 **Alejandro Velasquez**
+
+- LinkedIn: [VelzckC0D3](https://www.linkedin.com/in/velzckcode/)
+- GitHub: [@VelzckC0D3](https://github.com/VelzckC0D3) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
