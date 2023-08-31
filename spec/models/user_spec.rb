@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it 'is not valid without a name' do
+  it 'User is not valid without a name' do
     user = User.new(email: 'test@gamil.com', password: 'password')
     expect(user).not_to be_valid
   end
