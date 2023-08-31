@@ -113,6 +113,10 @@ To run the project tests, execute the following command:
 - Twitter: [@twitterhandle](https://twitter.com/Tebe95645832)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tebe-tisloh-847956225)
 
+👤 **Daniel Falcon**
+- LinkedIn: [Danfall369](https://www.linkedin.com/in/danfall/)
+- GitHub [Danfall369](https://github.com/Danfall369)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
