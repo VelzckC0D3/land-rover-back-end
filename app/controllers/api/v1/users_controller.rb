@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
   def index
     @api_v1_user = User.all
     if @api_v1_user.present?
-      render json: { success: true, users: @api_v1_user }
+      render json: { success: true, users: @api_v1_user }, status: :ok
     else
       render json: { success: false, message: 'No Users Found' }
     end
@@ -23,7 +23,7 @@ class Api::V1::UsersController < ApplicationController
     @api_v1_user = User.new(api_v1_user_params)
 
     if @api_v1_user.save
-      render json: { success: true, user: @api_v1_user }
+      render json: { success: true, user: @api_v1_user }, status: :created
     else
       render json: @api_v1_user.errors, status: :unprocessable_entity
     end
@@ -32,7 +32,7 @@ class Api::V1::UsersController < ApplicationController
   # PATCH/PUT /api/v1/users/1
   def update
     if @api_v1_user.update(api_v1_user_params)
-      render json: @api_v1_user
+      render json: @api_v1_user, status: :ok
     else
       render json: @api_v1_user.errors, status: :unprocessable_entity
     end
